@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.phonegps.MainActivity">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        ></com.baidu.mapapi.map.MapView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:onClick="xuanzhuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转"
+            />
+          <Button
+              android:onClick="fushi"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="俯视"/>
+        <Button
+            android:onClick="yidong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移动"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卫星"
+            android:onClick="weixing"
+            />
+        <Button
+            android:text="普通"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="putong"
+            />
+        <Button
+            android:onClick="jiaotong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交通图"/>
+    </LinearLayout>
+    <Button
+        android:onClick="daohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="导航"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:id="@+id/button" />
+
+    <Button
+        android:text="定位"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="dingwei"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp" />
+
+</RelativeLayout>
